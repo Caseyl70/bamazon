@@ -1,5 +1,19 @@
-// set up connection through the datat base then connect to get a response from the data base 
-// After connection use inquire to ask the user questions.
-//before the firdt question happens display all the awars to know what to select.
-//built into node console.table(response from the query to displahy in a table format)
-// each function should be its own question.
+//Initializing database and using require.
+var inquirer = require("inquirer");
+var mysql = require("mysql");
+
+// Connection
+var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "Tightjet70",
+    database: "bamazon"
+});
+
+// Connection Function
+
+connection.connect(function(err) {
+    if (err)
+        throw err;
+});
