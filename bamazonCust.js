@@ -17,3 +17,15 @@ connection.connect(function(err) {
     if (err)
         throw err;
 });
+
+//Product Function. Where questions start 
+
+//Quantity Function. Where customers pick and choose what product they want.
+
+// For loop for when actions are performed to update the database.
+
+//Ending shopping function (IF ELSE).
+
+//Update Function for the store to update quantity.
+
+//Out of Stock Function (IF ELSE).
